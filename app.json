@@ -1,24 +1,12 @@
 {
   "pages": [
-    "pages/login/login",
     "pages/index/index",
     "pages/logs/index"
   ],
   "window": {
-    "navigationBarTitleText": "微信小程序"
+    "navigationBarTitleText": "皇家移民"
   },
-  "tabBar": {
-    "list": [{
-      "pagePath": "pages/login/login",
-      "text": "登录"
-    }, {
-      "pagePath": "pages/index/index",
-      "text": "首页"
-    }, {
-      "pagePath": "pages/logs/logs",
-      "text": "日志"
-    }]
-  },
+
   "networkTimeout": {
     "request": 10000,
     "downloadFile": 10000

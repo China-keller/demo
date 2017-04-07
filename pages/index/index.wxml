@@ -1,10 +1,36 @@
-<!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section section_gap">
+    <view class="section__title">radio</view>
+    <radio-group name="radio-group">
+      <view>
+        <label>
+          <radio value="radio1" />radio1</label>
+      </view>
+      <view>
+        <label>
+          <radio value="radio2" />radio2</label>
+      </view>
+    </radio-group>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="section section_gap">
+    <view class="section__title">checkbox</view>
+    <checkbox-group name="checkbox">
+      <label>
+        <checkbox value="美国" />美国</label>
+      <label>
+        <checkbox value="加拿大" />加拿大</label>
+      <label>
+        <checkbox value="澳洲" />澳洲</label>
+      <label>
+        <checkbox value="新西兰" />新西兰</label>
+    </checkbox-group>
   </view>
-</view>
+  <view class="section">
+    <view class="section__title">手机号</view>
+    <input name="mobile" type="text" placeholder="请输入手机号" />
+  </view>
+  <view class="btn-area">
+    <button formType="submit">提交信息</button>
+    <button formType="reset">重置</button>
+  </view>
+</form>
